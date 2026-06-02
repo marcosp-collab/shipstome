@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy – ShipsToMe</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --bg: #0a0e1a; --surface: #111827; --surface2: #1a2235;
+      --border: rgba(255,255,255,0.08); --accent: #ff6b2b; --accent2: #ff8c55;
+      --text: #f0f0f0; --muted: #8a9ab5; --dim: #4a5568;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text); }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 40px; background: rgba(10,14,26,0.85);
+      backdrop-filter: blur(16px); border-bottom: 1px solid var(--border);
+    }
+    .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+    .nav-logo img { width: 28px; height: 28px; border-radius: 7px; }
+    .nav-logo span { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 15px; color: var(--text); }
+    .nav-back { color: var(--muted); text-decoration: none; font-size: 14px; transition: color 0.2s; }
+    .nav-back:hover { color: var(--text); }
+
+    .hero {
+      padding: 140px 24px 80px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .hero-bg { position: absolute; inset: 0; pointer-events: none; background: radial-gradient(ellipse 60% 40% at 50% 0%, rgba(255,107,43,0.08) 0%, transparent 70%); }
+    .section-label { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; }
+    h1 { font-family: 'Syne', sans-serif; font-size: clamp(32px, 5vw, 52px); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .hero-sub { color: var(--muted); font-size: 16px; font-weight: 300; }
+
+    .content {
+      max-width: 760px; margin: 0 auto; padding: 60px 24px 100px;
+    }
+
+    .card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: 14px; padding: 32px 36px; margin-bottom: 16px;
+    }
+    .card h2 {
+      font-family: 'Syne', sans-serif; font-size: 18px; font-weight: 700;
+      margin-bottom: 14px; display: flex; align-items: center; gap: 10px;
+    }
+    .card-icon { font-size: 20px; }
+    .card p { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 12px; }
+    .card p:last-child { margin-bottom: 0; }
+    .card ul { padding-left: 20px; }
+    .card ul li { font-size: 15px; color: var(--muted); line-height: 1.7; margin-bottom: 6px; }
+    .card a { color: var(--accent2); text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
+    .highlight { background: rgba(255,107,43,0.08); border: 1px solid rgba(255,107,43,0.2); border-radius: 10px; padding: 16px 20px; margin-top: 12px; font-size: 14px; color: var(--accent2); font-weight: 500; }
+
+    footer {
+      padding: 40px 40px; display: flex; align-items: center; justify-content: space-between;
+      border-top: 1px solid var(--border); font-size: 13px; color: var(--dim);
+    }
+    footer a { color: var(--dim); text-decoration: none; }
+    footer a:hover { color: var(--muted); }
+
+    @media (max-width: 600px) {
+      nav { padding: 14px 20px; }
+      .card { padding: 24px 20px; }
+      footer { flex-direction: column; gap: 16px; text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-logo">
+    <img src="icon128.png" alt="ShipsToMe">
+    <span>ShipsToMe</span>
+  </a>
+  <a href="index.html" class="nav-back" data-i18n="back">← Back</a>
+</nav>
+
+<div class="hero">
+  <div class="hero-bg"></div>
+  <div class="section-label" data-i18n="label">Legal</div>
+  <h1 data-i18n="title">Privacy Policy</h1>
+  <p class="hero-sub" data-i18n="updated">Last updated: June 2026</p>
+</div>
+
+<div class="content">
+
+  <div class="card">
+    <h2><span class="card-icon">📦</span> <span data-i18n="s1_title">What ShipsToMe does</span></h2>
+    <p data-i18n="s1_p">ShipsToMe is a browser extension that filters Amazon product listings to show only items that can be delivered to your location. It fetches product pages using your existing Amazon session cookies to check shipping availability, price, delivery dates and product variants.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="card-icon">🔒</span> <span data-i18n="s2_title">Data we collect</span></h2>
+    <p data-i18n="s2_p">This extension does <strong>not</strong> collect, store, transmit, or share any personal data. Specifically:</p>
+    <ul>
+      <li data-i18n="s2_l1">No browsing history is recorded or sent anywhere.</li>
+      <li data-i18n="s2_l2">No Amazon account information is accessed or stored.</li>
+      <li data-i18n="s2_l3">No cookies are read or modified.</li>
+      <li data-i18n="s2_l4">All processing happens locally in your browser.</li>
+    </ul>
+    <div class="highlight" data-i18n="s2_highlight">ShipsToMe never sends your data anywhere. Everything stays on your device.</div>
+  </div>
+
+  <div class="card">
+    <h2><span class="card-icon">⚙️</span> <span data-i18n="s3_title">How it works technically</span></h2>
+    <p data-i18n="s3_p">The extension makes fetch requests to Amazon product pages (e.g. amazon.es/dp/ASIN) using your browser's existing Amazon session. This is equivalent to you opening those pages yourself. The HTML responses are processed locally to extract shipping, price, and rating information. No data leaves your browser except to Amazon's own servers.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="card-icon">💾</span> <span data-i18n="s4_title">Settings storage</span></h2>
+    <p data-i18n="s4_p">Your filter preferences (minimum rating, third-party seller filter, Keepa chart on/off) are stored locally using Chrome's <code style="background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;font-size:13px">storage.sync</code> API, which may sync across your Chrome profile. This data never leaves Google's infrastructure and is not accessible to us.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="card-icon">📈</span> <span data-i18n="s5_title">Third-party services</span></h2>
+    <p data-i18n="s5_p">On product pages, the extension optionally displays a price history chart from <a href="https://keepa.com" target="_blank">Keepa.com</a>. This image is loaded directly from Keepa's servers. Please refer to <a href="https://keepa.com/privacypolicy.html" target="_blank">Keepa's Privacy Policy</a> for details.</p>
+  </div>
+
+  <div class="card">
+    <h2><span class="card-icon">✉️</span> <span data-i18n="s6_title">Contact</span></h2>
+    <p data-i18n="s6_p">If you have any questions about this privacy policy, you can reach us via <a href="https://ko-fi.com/marcospg" target="_blank">Ko-fi</a>.</p>
+  </div>
+
+</div>
+
+<footer>
+  <span data-i18n="footer_copy">© 2026 ShipsToMe · Made in Gran Canaria 🌴</span>
+  <div style="display:flex;gap:24px">
+    <a href="index.html" data-i18n="footer_home">Home</a>
+    <a href="https://ko-fi.com/marcospg" target="_blank" data-i18n="footer_support">Support</a>
+    <a href="https://chromewebstore.google.com" data-i18n="footer_store">Chrome Web Store</a>
+  </div>
+</footer>
+
+<script>
+const T = {
+  en: {
+    back: '← Back', label: 'Legal', title: 'Privacy Policy', updated: 'Last updated: June 2026',
+    s1_title: 'What ShipsToMe does',
+    s1_p: 'ShipsToMe is a browser extension that filters Amazon product listings to show only items that can be delivered to your location. It fetches product pages using your existing Amazon session to check shipping availability, price, delivery dates and product variants.',
+    s2_title: 'Data we collect',
+    s2_p: 'This extension does <strong>not</strong> collect, store, transmit, or share any personal data. Specifically:',
+    s2_l1: 'No browsing history is recorded or sent anywhere.',
+    s2_l2: 'No Amazon account information is accessed or stored.',
+    s2_l3: 'No cookies are read or modified.',
+    s2_l4: 'All processing happens locally in your browser.',
+    s2_highlight: 'ShipsToMe never sends your data anywhere. Everything stays on your device.',
+    s3_title: 'How it works technically',
+    s3_p: 'The extension makes fetch requests to Amazon product pages using your browser\'s existing Amazon session. This is equivalent to you opening those pages yourself. The HTML responses are processed locally to extract shipping, price, and rating information. No data leaves your browser except to Amazon\'s own servers.',
+    s4_title: 'Settings storage',
+    s4_p: 'Your filter preferences are stored locally using Chrome\'s <code style="background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;font-size:13px">storage.sync</code> API, which may sync across your Chrome profile. This data never leaves Google\'s infrastructure and is not accessible to us.',
+    s5_title: 'Third-party services',
+    s5_p: 'On product pages, the extension optionally displays a price history chart from <a href="https://keepa.com" target="_blank">Keepa.com</a>. This image is loaded directly from Keepa\'s servers. Please refer to <a href="https://keepa.com/privacypolicy.html" target="_blank">Keepa\'s Privacy Policy</a> for details.',
+    s6_title: 'Contact',
+    s6_p: 'If you have any questions about this privacy policy, you can reach us via <a href="https://ko-fi.com/marcospg" target="_blank">Ko-fi</a>.',
+    footer_copy: '© 2026 ShipsToMe · Made in Gran Canaria 🌴',
+    footer_home: 'Home', footer_support: 'Support', footer_store: 'Chrome Web Store',
+  },
+  es: {
+    back: '← Volver', label: 'Legal', title: 'Política de privacidad', updated: 'Última actualización: junio de 2026',
+    s1_title: 'Qué hace ShipsToMe',
+    s1_p: 'ShipsToMe es una extensión de navegador que filtra los listados de Amazon para mostrar solo los artículos que se pueden entregar en tu ubicación. Accede a las fichas de producto usando tu sesión de Amazon para comprobar disponibilidad de envío, precio, fechas de entrega y variantes.',
+    s2_title: 'Datos que recopilamos',
+    s2_p: 'Esta extensión <strong>no</strong> recopila, almacena, transmite ni comparte ningún dato personal. En concreto:',
+    s2_l1: 'No se registra ni envía ningún historial de navegación.',
+    s2_l2: 'No se accede ni almacena información de tu cuenta de Amazon.',
+    s2_l3: 'No se leen ni modifican cookies.',
+    s2_l4: 'Todo el procesamiento ocurre localmente en tu navegador.',
+    s2_highlight: 'ShipsToMe nunca envía tus datos a ningún sitio. Todo permanece en tu dispositivo.',
+    s3_title: 'Cómo funciona técnicamente',
+    s3_p: 'La extensión hace solicitudes fetch a las fichas de producto de Amazon usando tu sesión existente en el navegador. Es equivalente a que tú mismo abrieras esas páginas. Las respuestas HTML se procesan localmente para extraer información de envío, precio y valoración. Ningún dato sale de tu navegador salvo hacia los propios servidores de Amazon.',
+    s4_title: 'Almacenamiento de ajustes',
+    s4_p: 'Tus preferencias de filtro se almacenan localmente usando la API <code style="background:rgba(255,255,255,0.08);padding:2px 6px;border-radius:4px;font-size:13px">storage.sync</code> de Chrome, que puede sincronizarse en tu perfil. Estos datos nunca salen de la infraestructura de Google y no son accesibles para nosotros.',
+    s5_title: 'Servicios de terceros',
+    s5_p: 'En las fichas de producto, la extensión muestra opcionalmente una gráfica de historial de precios de <a href="https://keepa.com" target="_blank">Keepa.com</a>. Esta imagen se carga directamente desde los servidores de Keepa. Consulta la <a href="https://keepa.com/privacypolicy.html" target="_blank">Política de privacidad de Keepa</a> para más detalles.',
+    s6_title: 'Contacto',
+    s6_p: 'Si tienes alguna pregunta sobre esta política de privacidad, puedes contactarnos a través de <a href="https://ko-fi.com/marcospg" target="_blank">Ko-fi</a>.',
+    footer_copy: '© 2026 ShipsToMe · Hecho en Gran Canaria 🌴',
+    footer_home: 'Inicio', footer_support: 'Soporte', footer_store: 'Chrome Web Store',
+  }
+};
+
+const lang = navigator.language.startsWith('es') ? 'es' : 'en';
+document.documentElement.lang = lang;
+document.querySelectorAll('[data-i18n]').forEach(el => {
+  const val = T[lang][el.dataset.i18n];
+  if (val) el.innerHTML = val;
+});
+</script>
+</body>
+</html>
